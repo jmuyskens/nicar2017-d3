@@ -144,7 +144,7 @@ Your code will look something like this when you are done: http://blockbuilder.o
 - Canvas
 
 # libraries and tools you may find useful
-crowbar to download your chart as an SVG. You can then edit it using vector graphics software such as Adobe Illustrator.
+[crowbar](http://nytimes.github.io/svg-crowbar/) to download your chart as an SVG. You can then edit it using vector graphics software such as Adobe Illustrator.
 
 [d3-jetpack](https://www.npmjs.com/package/d3-jetpack) for convenience functions that will save you a lot of repetitive typing.
 
