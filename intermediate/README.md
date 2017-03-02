@@ -40,7 +40,7 @@ TK rollup docs link
 Add a `.rollup()` function that counts number of tweets per day.
 
 # 4. Putting it together
-Fork this block: TK blockbuilder link
+Fork this block: http://blockbuilder.org/jmuyskens/e81ad8e9a3b700bde6c2c45e4421ec79
 
 Copy in your `d3.nest()` code and store the nested data in a variable called `nestedData`.
 
@@ -48,12 +48,16 @@ Modify domain of the x and y-axis using `d3.extent()`.
 
 Change reference in `.data()` to `nestedData`.
 
+http://blockbuilder.org/jmuyskens/e6dd5b14f7de3bd690a32c414daa4f3a
+
 # 5. Changing scales
 TK link d3-scale docs
 
 `d3.scaleLinear` may not be the most appropriate choice for our x axis. Let's try using `d3.scaleTime` instead.
 
 Extra credit: change the y-axis scale to begin at zero. Hint: use `d3.max()`.
+
+http://blockbuilder.org/jmuyskens/278992910f1668f670f5d32d63645cb1
 
 # 6. Formatting axes
 TK axes docs link
@@ -98,6 +102,10 @@ You need to specify the following attributes:
 - `cy` (y position)
 - `r` (radius)
 
+Set a class using the `source` value in the data and use CSS to change the `fill` on the `<circle>`s.
+
+http://blockbuilder.org/jmuyskens/12079dc0dcd8d24138b8814afe6659a9
+
 Extra credit: use the *area* of the circle to represent a data attribute.
 
 # 9. Adding interactions
@@ -112,6 +120,8 @@ Some events:
 - mouseleave
 - mouseover
 - click
+
+http://blockbuilder.org/jmuyskens/df89fd5d8a5ac0e2890d030f4db5d6cb
 
 # 10. Transitions
 First, add a new linear scale for the x axis. Set the domain of this scale based on `retweet_count`.
