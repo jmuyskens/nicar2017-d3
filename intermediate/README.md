@@ -8,7 +8,7 @@ Goal is to structure your data the way you want your DOM to look.
 
 `Nest` is like "groupBy" in other functional programming languages
 
-TK link to nest docs
+[Docs: d3.nest](https://github.com/d3/d3-collection#nests)
 
 ![nest diagram](img/nest.png)
 
@@ -20,7 +20,7 @@ TK link to nest docs
 
 
 # 2. Parsing dates
-TK link to date docs
+[Docs: time formatting](https://github.com/d3/d3-time-format)
 
 `d3.dateParse` returns a function that turns a String into a Date
 
@@ -35,7 +35,7 @@ The format DSL is like strptime in other programming languages. It's worth learn
 [Try it out!](https://runkit.com/npm/d3-time-format)
 
 # 3. Aggregating data
-TK rollup docs link
+[Docs: rollup](https://github.com/d3/d3-collection#nest_rollup)
 
 Add a `.rollup()` function that counts number of tweets per day.
 
@@ -51,7 +51,7 @@ Change reference in `.data()` to `nestedData`.
 http://blockbuilder.org/jmuyskens/e6dd5b14f7de3bd690a32c414daa4f3a
 
 # 5. Changing scales
-TK link d3-scale docs
+[Docs: scaleTime](https://github.com/d3/d3-scale/blob/master/README.md#scaleTime)
 
 `d3.scaleLinear` may not be the most appropriate choice for our x axis. Let's try using `d3.scaleTime` instead.
 
@@ -60,7 +60,7 @@ Extra credit: change the y-axis scale to begin at zero. Hint: use `d3.max()`.
 http://blockbuilder.org/jmuyskens/278992910f1668f670f5d32d63645cb1
 
 # 6. Formatting axes
-TK axes docs link
+[Docs: axis ticks](https://github.com/d3/d3-axis#axis_ticks)
 
 Play with the following:
 
@@ -126,7 +126,11 @@ http://blockbuilder.org/jmuyskens/df89fd5d8a5ac0e2890d030f4db5d6cb
 # 10. Transitions
 First, add a new linear scale for the x axis. Set the domain of this scale based on `retweet_count`.
 
-Then
+Then on our `enter()` code for `<circle>` chain `.transition()`. After this, we can change different attributes and d3 will transition them for us.
+
+To slow down the transition, use `.duration(TK ms)`.
+
+http://blockbuilder.org/jmuyskens/372c0661614876ca736cc6af475a3840
 
 # what's in the advanced class
 - Transitions
@@ -140,12 +144,10 @@ Then
 # libraries and tools you may find useful
 crowbar to download your chart as an SVG. You can then edit it using vector graphics software such as Adobe Illustrator.
 
-d3-jetpack for convenience functions that will save you a lot of repetitive typing.
+[d3-jetpack](https://www.npmjs.com/package/d3-jetpack) for convenience functions that will save you a lot of repetitive typing.
 
 [d3-legend](http://d3-legend.susielu.com/) to make convenient legends based on your scales.
 
 [Textures.js](https://riccardoscalco.github.io/textures/) to use patterns in your visualizations.
 
-Swoopy Drag for interactive annotations.
-
-http://d3-legend.susielu.com/
+[Swoopy drag](https://github.com/1wheel/swoopy-drag) for interactive annotations.
