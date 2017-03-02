@@ -87,6 +87,8 @@ Translate the `<g>` to a relevant date (for instance, inauguration day, Jan. 20,
 
 Use the svg attributes `text-anchor` (values can be `start`, `middle`, `end`) to justify the text, `dx` and `dy` to adjust the position of the label.
 
+Your code will look something like this when you are done: http://blockbuilder.org/jmuyskens/a67754e7b5e21e55abbf768fb1f6c5ed
+
 # 8. Scatterplot
 With the same data, we'll change from a line chart to a scatterplot.
 
