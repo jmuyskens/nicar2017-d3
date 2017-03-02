@@ -48,7 +48,7 @@ Modify domain of the x and y-axis using `d3.extent()`.
 
 Change reference in `.data()` to `nestedData`.
 
-http://blockbuilder.org/jmuyskens/e6dd5b14f7de3bd690a32c414daa4f3a
+Your code will look something like this when you are done: http://blockbuilder.org/jmuyskens/e6dd5b14f7de3bd690a32c414daa4f3a
 
 # 5. Changing scales
 [Docs: scaleTime](https://github.com/d3/d3-scale/blob/master/README.md#scaleTime)
@@ -57,7 +57,7 @@ http://blockbuilder.org/jmuyskens/e6dd5b14f7de3bd690a32c414daa4f3a
 
 Extra credit: change the y-axis scale to begin at zero. Hint: use `d3.max()`.
 
-http://blockbuilder.org/jmuyskens/278992910f1668f670f5d32d63645cb1
+Your code will look something like this when you are done: http://blockbuilder.org/jmuyskens/278992910f1668f670f5d32d63645cb1
 
 # 6. Formatting axes
 [Docs: axis ticks](https://github.com/d3/d3-axis#axis_ticks)
@@ -104,7 +104,7 @@ You need to specify the following attributes:
 
 Set a class using the `source` value in the data and use CSS to change the `fill` on the `<circle>`s.
 
-http://blockbuilder.org/jmuyskens/12079dc0dcd8d24138b8814afe6659a9
+Your code will look something like this when you are done: http://blockbuilder.org/jmuyskens/12079dc0dcd8d24138b8814afe6659a9
 
 Extra credit: use the *area* of the circle to represent a data attribute.
 
@@ -130,7 +130,7 @@ Then on our `enter()` code for `<circle>` chain `.transition()`. After this, we 
 
 To slow down the transition, use `.duration(TK ms)`.
 
-http://blockbuilder.org/jmuyskens/372c0661614876ca736cc6af475a3840
+Your code will look something like this when you are done: http://blockbuilder.org/jmuyskens/372c0661614876ca736cc6af475a3840
 
 # what's in the advanced class
 - Transitions
