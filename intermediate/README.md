@@ -3,7 +3,7 @@ By John Muyskens ([@JohnMuyskens](twitter.com/johnmuyskens)) and Leslie Shapiro 
 
 [Slides](https://docs.google.com/presentation/d/1cAHnGb3YDaa3IHss3mP4a0gH_eDXY6BP-ous2bKY1BI/).
 
-# Nesting
+# 1. Grouping data
 Goal is to structure your data the way you want your DOM to look.
 
 A quick note on functional programming APIs in JavaScript:
@@ -27,7 +27,7 @@ TK link to nest docs
 [Try it out!](http://bl.ocks.org/jmuyskens/raw/7afd1f9f2b6bd0b767b2df346d39a847/)
 
 
-# Dates
+# 2. Parsing dates
 TK link to date docs
 
 `d3.dateParse` returns a function that turns a String into a Date
@@ -38,7 +38,20 @@ The format DSL is like strptime in other langs worth learning the most common ar
 
 [Try it out!](https://runkit.com/npm/d3-time-format)
 
-# Scale options
+# 4. Aggregating data
+TK rollup docs link
+
+
+# 3. Putting it together
+TK blockbuilder link
+
+Copy in complete nesting code and store the nested data in a variable called `nestedData`.
+
+Modify domain of the x and y-axis with d3.extent.
+
+Change reference in `.data()` to `nestedData`.
+
+# 5. Changing scales
 TK link d3-scale docs
 
 `d3.scaleLinear` may not be the most appropriate choice for our x axis. Let's try using `d3.scaleTime` instead.
@@ -48,15 +61,29 @@ TK link d3-scale docs
 - scaleLog
 - scaleOrdinal
 
-# Axis formatting options
+# 6. Formatting axes
+TK axes docs link
 
-`.tickSize` specify length of ticks
+Play with the following:
 
-`.ticks` specify number of ticks, but d3 does some thinking for you (TK why)
+`.tickSize` to specify length of ticks
 
-The backbone of the axis is a <path> while the ticks are <line>s so you can easily style them separately.
+`.ticks` to specify number of ticks, but d3 does some thinking for you (TK why)
+
+The backbone of the axis is a <path> while the ticks are `<line>`s so you can easily style them separately.
 
 Use `.attr('transform', 'translate(TK, TK)')` to move your axis around.
+
+# 7. Annotate
+Add a new `<g>` container for our annotation.
+
+To the `<g>` add a `<line>`.
+
+Also add to the `<g>` a `<text>` to label our line. Use `.text()` to specify your label text.
+
+Translate the `<g>` to a relevant date using `.attr('translate', 'transform(TK, TK)')`
+
+Use the svg attributes `text-anchor` (values can be `start`, `middle`, `end`) to justify the text, `dx` and `dy` to adjust the position of the label.
 
 # Advanced nesting for multiple time series
 You can keep adding layers to your nest by adding `.key`s. Our line function expects an array of arrays because the enter pattern expects an array and the line function also expects an array.
@@ -64,11 +91,19 @@ You can keep adding layers to your nest by adding `.key`s. Our line function exp
 Note that there are missing values for some days, so a line chart may not be the most appropriate choice here.
 
 # Scatterplot
-We won't need to nest our data
+We won't need to nest our data for this chart.
 
-Change y axis
+Write new enter pattern for `<circle>`.
 
-Write new enter pattern for `<circle>`
+TK circle svg docs link.
+
+You need to specify the following attributes:
+
+`cx` (x position)
+
+`cy` (y position)
+
+`r` (radius)
 
 # Interaction
 .on
