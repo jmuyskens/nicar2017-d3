@@ -1,5 +1,5 @@
 
-By John Muyskens ([@JohnMuyskens](twitter.com/johnmuyskens)) and Leslie Shapiro ([@lmshap](twitter.com/lmshap)). We are members of the Washington Post graphics team (@postgraphics) who specialize in data journalism.
+By John Muyskens ([@JohnMuyskens](https://twitter.com/johnmuyskens)) and Leslie Shapiro ([@lmshap](https://twitter.com/lmshap)). We are members of the Washington Post graphics team (@postgraphics) who specialize in data journalism.
 
 [Slides](https://docs.google.com/presentation/d/1cAHnGb3YDaa3IHss3mP4a0gH_eDXY6BP-ous2bKY1BI/).
 
